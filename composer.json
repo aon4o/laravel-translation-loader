@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-translation-loader",
+    "name": "aon4o/laravel-translation-loader",
     "description": "Store your language lines in the database, yaml or other sources",
     "keywords": [
         "spatie",
@@ -11,13 +11,19 @@
         "language",
         "i8n"
     ],
-    "homepage": "https://github.com/spatie/laravel-translation-loader",
+    "homepage": "https://github.com/aon4o/laravel-translation-loader",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "aon4o",
+            "email": "a.o.naidenov@gmail.com",
+            "homepage": "https://www.linkedin.com/in/alex-naida/",
             "role": "Developer"
         }
     ],
