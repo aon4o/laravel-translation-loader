@@ -1,9 +1,17 @@
 # Store your language lines in the database
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-translation-loader)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/aon4o/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/aon4o/laravel-translation-loader)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-translation-loader/run-tests.yml?branch=main&label=Tests&style=flat-square)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-translation-loader)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/aon4o/laravel-translation-loader/run-tests.yml?branch=main&label=Tests&style=flat-square)
+[![Total Downloads](https://img.shields.io/packagist/dt/aon4o/laravel-translation-loader.svg?style=flat-square)](https://packagist.org/packages/aon4o/laravel-translation-loader)
+
+## Disclaimer
+
+This is NOT an official package provided by Spatie.
+This is a fork of the original package with some minor changes:
+- Added support for Namespaced translations. [#178](https://github.com/spatie/laravel-translation-loader/pull/178)
+
+## Base Usage
 
 In a vanilla Laravel or Lumen installation, you can use [language files](https://laravel.com/docs/localization) to
 localize your app. This package will enable the translations to be stored in the database. You can still use all the
@@ -12,6 +20,8 @@ and love.
 
 ```php
 __('messages.welcome', ['name' => 'dayle']);
+// or
+__('clients::messages.welcome', ['name' => 'dayle']);
 ```
 
 You can even mix using language files and the database. If a translation is present in both a file and the database, the
@@ -24,7 +34,7 @@ Spatie is a web design agency based in Antwerp, Belgium.
 You'll find an overview of all our open source
 projects [on our website](https://spatie.be/opensource).
 
-## Support us
+## Support Spatie
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-translation-loader.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-translation-loader)
 
@@ -40,7 +50,7 @@ on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 You can install the package via composer:
 
 ``` bash
-composer require spatie/laravel-translation-loader
+composer require aon4o/laravel-translation-loader
 ```
 
 In `config/app.php` (Laravel) or `bootstrap/app.php` (Lumen) you should replace Laravel's translation service provider
