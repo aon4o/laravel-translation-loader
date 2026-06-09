@@ -54,7 +54,7 @@ it('will return the translation string if max nested level is reached', function
 
     expect(trans('nested.bool.1'))->toEqual($this->nested['bool'][1])
         ->and(trans('namespace::nested.bool.1'))->toEqual($this->nested['bool'][1]);
-})->only();
+});
 
 it('will return the dotted translation key if no translation found', function () {
     $notFoundKey = 'nested.bool.3';
